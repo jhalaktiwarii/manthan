@@ -1,0 +1,1555 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><htmlCode>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        [x-cloak] { display: none !important; }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #E5E7EB;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .active-link {
+            background-color: #F3F4F6;
+            color: #4B5563;
+            border-radius: 0.375rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div id="root" class="flex h-screen overflow-hidden">
+        <div x-data="{ isOpen: false }" class="relative">
+            <!-- Mobile Menu Button -->
+            <button type="button" 
+                    @click="isOpen = !isOpen" 
+                    class="lg:hidden fixed top-4 left-4 p-2 rounded-lg bg-white border border-gray-200 z-50"
+                    aria-controls="mobile-menu" 
+                    :aria-expanded="isOpen">
+                <span class="sr-only">Open menu</span>
+                <svg x-show="!isOpen" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg x-show="isOpen" x-cloak class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+
+            <!-- Sidebar -->
+            <nav class="hidden lg:flex flex-col w-64 bg-white h-screen border-r border-gray-200">
+                <div class="p-4 border-b border-gray-200">
+                    <h1 class="text-xl font-semibold text-gray-800">Finance Tracker</h1>
+                </div>
+                <div class="flex-1 overflow-y-auto p-4">
+                    <div class="space-y-2">
+                        <a href="#dashboard" class="active-link flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-all">
+                            <span class="material-icons-outlined mr-3">dashboard</span>
+                            Dashboard
+                        </a>
+                        <a href="#expenses" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-all">
+                            <span class="material-icons-outlined mr-3">receipt_long</span>
+                            Expenses
+                        </a>
+                        <a href="#billscanner" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-all">
+                            <span class="material-icons-outlined mr-3">document_scanner</span>
+                            Scanner
+                        </a>
+                        <a href="#categories" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-all">
+                            <span class="material-icons-outlined mr-3">category</span>
+                            Categories
+                        </a>
+                        <a href="#analytics" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-all">
+                            <span class="material-icons-outlined mr-3">analytics</span>
+                            Analytics
+                        </a>
+                    </div>
+                </div>
+                <div class="p-4 border-t border-gray-200">
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full bg-gray-200"></div>
+                        <div class="ml-3">
+                            <p class="text-sm font-medium text-gray-700">User Profile</p>
+                            <p class="text-xs text-gray-500">user@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div x-show="isOpen" 
+                 x-cloak
+                 class="lg:hidden fixed inset-0 z-40 bg-gray-600 bg-opacity-75"
+                 @click.away="isOpen = false"
+                 @resize.window="if (window.innerWidth > 1024) isOpen = false"
+                 x-transition:enter="transition ease-out duration-300"
+                 x-transition:enter-start="opacity-0"
+                 x-transition:enter-end="opacity-100"
+                 x-transition:leave="transition ease-in duration-200"
+                 x-transition:leave-start="opacity-100"
+                 x-transition:leave-end="opacity-0">
+                <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-64 bg-white">
+                    <div class="p-4 border-b border-gray-200">
+                        <h1 class="text-xl font-semibold text-gray-800">Finance Tracker</h1>
+                    </div>
+                    <div class="flex-1 overflow-y-auto p-4">
+                        <div class="space-y-2">
+                            <a href="#dashboard" class="active-link flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-all">
+                                Dashboard
+                            </a>
+                            <a href="#expenses" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-all">
+                                Expenses
+                            </a>
+                            <a href="#billscanner" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-all">
+                                Scanner
+                            </a>
+                            <a href="#categories" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-all">
+                                Categories
+                            </a>
+                            <a href="#analytics" class="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 rounded-lg transition-all">
+                                Analytics
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <main class="flex-1 overflow-y-auto">
+            <header class="sticky top-0 bg-white border-b border-gray-200 z-10">
+                <div class="flex items-center justify-between px-6 py-4">
+                    <h2 class="text-xl font-semibold text-gray-800">Dashboard</h2>
+                    <div class="flex items-center space-x-4">
+                        <button class="p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <span class="material-icons-outlined">notifications</span>
+                        </button>
+                        <button class="p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
+                            <span class="material-icons-outlined">settings</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            
+            <MountPoint>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('nav a');
+    
+    function setActiveLink() {
+        const hash = window.location.hash || '#dashboard';
+        links.forEach(link => {
+            if(link.getAttribute('href') === hash) {
+                link.classList.add('active-link');
+            } else {
+                link.classList.remove('active-link');
+            }
+        });
+    }
+
+    window.addEventListener('hashchange', setActiveLink);
+    setActiveLink();
+});
+</script><htmlCode>
+<div id="dashboard" class="p-6 bg-gray-50">
+    <!-- Overview Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+        <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm text-gray-500">Total Balance</p>
+                    <h3 class="text-2xl font-semibold text-gray-800">$24,567</h3>
+                </div>
+                <div class="p-2 bg-green-100 rounded-lg">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="mt-4 flex items-center text-sm">
+                <span class="text-green-500">+2.5%</span>
+                <span class="text-gray-400 ml-2">from last month</span>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm text-gray-500">Monthly Expenses</p>
+                    <h3 class="text-2xl font-semibold text-gray-800">$3,240</h3>
+                </div>
+                <div class="p-2 bg-red-100 rounded-lg">
+                    <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="mt-4 flex items-center text-sm">
+                <span class="text-red-500">+12.5%</span>
+                <span class="text-gray-400 ml-2">from last month</span>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm text-gray-500">Savings</p>
+                    <h3 class="text-2xl font-semibold text-gray-800">$8,725</h3>
+                </div>
+                <div class="p-2 bg-blue-100 rounded-lg">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="mt-4 flex items-center text-sm">
+                <span class="text-green-500">+8.2%</span>
+                <span class="text-gray-400 ml-2">from last month</span>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm text-gray-500">Bills Due</p>
+                    <h3 class="text-2xl font-semibold text-gray-800">$1,250</h3>
+                </div>
+                <div class="p-2 bg-yellow-100 rounded-lg">
+                    <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="mt-4 flex items-center text-sm">
+                <span class="text-red-500">Due in 5 days</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="mb-6">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">Quick Actions</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <button class="flex flex-col items-center justify-center p-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+                <svg class="w-6 h-6 text-blue-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                </svg>
+                <span class="text-sm font-medium text-gray-700">Add Expense</span>
+            </button>
+            <button class="flex flex-col items-center justify-center p-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+                <svg class="w-6 h-6 text-green-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span class="text-sm font-medium text-gray-700">Scan Bill</span>
+            </button>
+            <button class="flex flex-col items-center justify-center p-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+                <svg class="w-6 h-6 text-purple-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+                <span class="text-sm font-medium text-gray-700">View Reports</span>
+            </button>
+            <button class="flex flex-col items-center justify-center p-4 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors">
+                <svg class="w-6 h-6 text-yellow-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span class="text-sm font-medium text-gray-700">Settings</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Recent Transactions -->
+    <div class="bg-white rounded-lg border border-gray-200">
+        <div class="p-6 border-b border-gray-200">
+            <h2 class="text-lg font-semibold text-gray-800">Recent Transactions</h2>
+        </div>
+        <div class="divide-y divide-gray-200">
+            <div class="p-6 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="p-2 bg-blue-100 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-900">Shopping</p>
+                        <p class="text-sm text-gray-500">Grocery Store</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm font-medium text-red-600">-$125.00</p>
+                    <p class="text-sm text-gray-500">Today</p>
+                </div>
+            </div>
+
+            <div class="p-6 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="p-2 bg-green-100 rounded-lg">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-900">Salary</p>
+                        <p class="text-sm text-gray-500">Company Inc</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm font-medium text-green-600">+$4,500.00</p>
+                    <p class="text-sm text-gray-500">Yesterday</p>
+                </div>
+            </div>
+
+            <div class="p-6 flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="p-2 bg-yellow-100 rounded-lg">
+                        <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm font-medium text-gray-900">Utilities</p>
+                        <p class="text-sm text-gray-500">Electric Bill</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm font-medium text-red-600">-$85.00</p>
+                    <p class="text-sm text-gray-500">2 days ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="expenses" class="p-6 bg-gray-50">
+    <!-- Add New Expense Button -->
+    <div class="flex justify-between items-center mb-6">
+        <h2 class="text-xl font-semibold text-gray-800">Expenses</h2>
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+            </svg>
+            Add New Expense
+        </button>
+    </div>
+
+    <!-- Category Filter -->
+    <div class="mb-6">
+        <div class="flex flex-wrap gap-3">
+            <button class="px-4 py-2 bg-blue-100 text-blue-600 rounded-full font-medium text-sm hover:bg-blue-200 transition-colors">All</button>
+            <button class="px-4 py-2 bg-white border border-gray-200 rounded-full font-medium text-sm text-gray-600 hover:bg-gray-50 transition-colors">Restaurants</button>
+            <button class="px-4 py-2 bg-white border border-gray-200 rounded-full font-medium text-sm text-gray-600 hover:bg-gray-50 transition-colors">Studies</button>
+            <button class="px-4 py-2 bg-white border border-gray-200 rounded-full font-medium text-sm text-gray-600 hover:bg-gray-50 transition-colors">Food</button>
+            <button class="px-4 py-2 bg-white border border-gray-200 rounded-full font-medium text-sm text-gray-600 hover:bg-gray-50 transition-colors">Travel</button>
+            <button class="px-4 py-2 bg-white border border-gray-200 rounded-full font-medium text-sm text-gray-600 hover:bg-gray-50 transition-colors">Other</button>
+        </div>
+    </div>
+
+    <!-- Expenses List -->
+    <div class="bg-white rounded-lg border border-gray-200">
+        <div class="p-4 border-b border-gray-200">
+            <div class="grid grid-cols-12 gap-4 text-sm font-medium text-gray-500">
+                <div class="col-span-4">Description</div>
+                <div class="col-span-2">Category</div>
+                <div class="col-span-2">Date</div>
+                <div class="col-span-2 text-right">Amount</div>
+                <div class="col-span-2 text-right">Actions</div>
+            </div>
+        </div>
+
+        <div class="divide-y divide-gray-200">
+            <div class="p-4 hover:bg-gray-50 transition-colors">
+                <div class="grid grid-cols-12 gap-4 items-center">
+                    <div class="col-span-4">
+                        <p class="font-medium text-gray-900">Coffee Shop</p>
+                        <p class="text-sm text-gray-500">Morning coffee and breakfast</p>
+                    </div>
+                    <div class="col-span-2">
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-pink-100 text-pink-800">Restaurants</span>
+                    </div>
+                    <div class="col-span-2 text-sm text-gray-500">Today</div>
+                    <div class="col-span-2 text-right font-medium text-red-600">-$15.50</div>
+                    <div class="col-span-2 text-right">
+                        <button class="text-gray-400 hover:text-gray-500 mx-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-gray-500 mx-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-4 hover:bg-gray-50 transition-colors">
+                <div class="grid grid-cols-12 gap-4 items-center">
+                    <div class="col-span-4">
+                        <p class="font-medium text-gray-900">University Books</p>
+                        <p class="text-sm text-gray-500">Semester textbooks</p>
+                    </div>
+                    <div class="col-span-2">
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">Studies</span>
+                    </div>
+                    <div class="col-span-2 text-sm text-gray-500">Yesterday</div>
+                    <div class="col-span-2 text-right font-medium text-red-600">-$245.00</div>
+                    <div class="col-span-2 text-right">
+                        <button class="text-gray-400 hover:text-gray-500 mx-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-gray-500 mx-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-4 hover:bg-gray-50 transition-colors">
+                <div class="grid grid-cols-12 gap-4 items-center">
+                    <div class="col-span-4">
+                        <p class="font-medium text-gray-900">Train Ticket</p>
+                        <p class="text-sm text-gray-500">Monthly pass</p>
+                    </div>
+                    <div class="col-span-2">
+                        <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Travel</span>
+                    </div>
+                    <div class="col-span-2 text-sm text-gray-500">2 days ago</div>
+                    <div class="col-span-2 text-right font-medium text-red-600">-$75.00</div>
+                    <div class="col-span-2 text-right">
+                        <button class="text-gray-400 hover:text-gray-500 mx-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                            </svg>
+                        </button>
+                        <button class="text-gray-400 hover:text-gray-500 mx-1">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="billscanner" class="p-6 bg-gray-50">
+    <div class="max-w-3xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-2">Bill Scanner</h2>
+            <p class="text-gray-600">Scan your bills instantly to track expenses</p>
+        </div>
+
+        <!-- Scanner Interface -->
+        <div class="bg-white rounded-lg border border-gray-200 p-6 mb-6">
+            <div class="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
+                <!-- Camera Button -->
+                <button class="mx-auto mb-4 p-4 bg-blue-50 rounded-full">
+                    <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                </button>
+                <h3 class="text-lg font-medium text-gray-900 mb-2">Scan Your Bill</h3>
+                <p class="text-sm text-gray-500 mb-4">Click the camera icon to scan your bill or drag and drop an image here</p>
+                <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                    Open Camera
+                </button>
+            </div>
+        </div>
+
+        <!-- Recent Scans -->
+        <div class="bg-white rounded-lg border border-gray-200">
+            <div class="p-4 border-b border-gray-200">
+                <h3 class="font-medium text-gray-900">Recent Scans</h3>
+            </div>
+            
+            <div class="divide-y divide-gray-200">
+                <div class="p-4 flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="p-2 bg-blue-100 rounded-lg">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-medium text-gray-900">Grocery Receipt</p>
+                            <p class="text-sm text-gray-500">Scanned just now</p>
+                        </div>
+                    </div>
+                    <span class="text-sm font-medium text-gray-900">$45.82</span>
+                </div>
+
+                <div class="p-4 flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="p-2 bg-blue-100 rounded-lg">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-medium text-gray-900">Restaurant Bill</p>
+                            <p class="text-sm text-gray-500">2 hours ago</p>
+                        </div>
+                    </div>
+                    <span class="text-sm font-medium text-gray-900">$32.50</span>
+                </div>
+
+                <div class="p-4 flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="p-2 bg-blue-100 rounded-lg">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-medium text-gray-900">Utility Bill</p>
+                            <p class="text-sm text-gray-500">Yesterday</p>
+                        </div>
+                    </div>
+                    <span class="text-sm font-medium text-gray-900">$125.00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scanning Tips -->
+        <div class="mt-6 bg-blue-50 rounded-lg p-4">
+            <h4 class="font-medium text-blue-900 mb-2">Tips for better scanning:</h4>
+            <ul class="text-sm text-blue-800 space-y-1">
+                <li>• Ensure good lighting conditions</li>
+                <li>• Keep the bill flat and avoid wrinkles</li>
+                <li>• Center the bill in the frame</li>
+                <li>• Hold your device steady</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="categories" class="p-6 bg-gray-50">
+    <!-- Header with Add Category Button -->
+    <div class="flex justify-between items-center mb-6">
+        <h2 class="text-xl font-semibold text-gray-800">Expense Categories</h2>
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+            </svg>
+            Create Category
+        </button>
+    </div>
+
+    <!-- Categories Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Restaurants Category -->
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <div class="flex items-center justify-between mb-4">
+                <div class="p-3 bg-red-100 rounded-lg">
+                    <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                    </svg>
+                </div>
+                <div class="flex space-x-2">
+                    <button class="text-gray-400 hover:text-gray-500">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">Restaurants</h3>
+            <p class="text-sm text-gray-500 mb-4">Dining out and food delivery expenses</p>
+            <div class="flex justify-between items-center">
+                <div>
+                    <p class="text-sm text-gray-500">Monthly Budget</p>
+                    <p class="text-lg font-medium text-gray-900">$300</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500">Spent</p>
+                    <p class="text-lg font-medium text-red-600">$245</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Studies Category -->
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <div class="flex items-center justify-between mb-4">
+                <div class="p-3 bg-blue-100 rounded-lg">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                </div>
+                <div class="flex space-x-2">
+                    <button class="text-gray-400 hover:text-gray-500">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">Studies</h3>
+            <p class="text-sm text-gray-500 mb-4">Educational expenses and materials</p>
+            <div class="flex justify-between items-center">
+                <div>
+                    <p class="text-sm text-gray-500">Monthly Budget</p>
+                    <p class="text-lg font-medium text-gray-900">$500</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500">Spent</p>
+                    <p class="text-lg font-medium text-green-600">$320</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Travel Category -->
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <div class="flex items-center justify-between mb-4">
+                <div class="p-3 bg-green-100 rounded-lg">
+                    <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                    </svg>
+                </div>
+                <div class="flex space-x-2">
+                    <button class="text-gray-400 hover:text-gray-500">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">Travel</h3>
+            <p class="text-sm text-gray-500 mb-4">Transportation and travel expenses</p>
+            <div class="flex justify-between items-center">
+                <div>
+                    <p class="text-sm text-gray-500">Monthly Budget</p>
+                    <p class="text-lg font-medium text-gray-900">$200</p>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-500">Spent</p>
+                    <p class="text-lg font-medium text-yellow-600">$180</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add New Category Card -->
+        <div class="bg-gray-50 rounded-lg border border-dashed border-gray-300 p-6 flex flex-col items-center justify-center cursor-pointer hover:bg-gray-100 transition-colors">
+            <div class="p-3 bg-gray-200 rounded-full mb-4">
+                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                </svg>
+            </div>
+            <h3 class="text-lg font-medium text-gray-900 mb-1">Add New Category</h3>
+            <p class="text-sm text-gray-500 text-center">Create a custom category for your expenses</p>
+        </div>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="analytics" class="p-6 bg-gray-50">
+    <div class="mb-6">
+        <h2 class="text-xl font-semibold text-gray-800">Financial Analytics</h2>
+        <p class="text-gray-600">Track your spending patterns and financial health</p>
+    </div>
+
+    <!-- Overview Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-gray-500">Monthly Spending</h3>
+                <span class="text-red-500">+12.5%</span>
+            </div>
+            <p class="text-2xl font-semibold text-gray-800">$2,345</p>
+            <div class="mt-4 h-2 bg-gray-200 rounded-full">
+                <div class="h-2 bg-blue-600 rounded-full" style="width: 75%"></div>
+            </div>
+            <p class="text-sm text-gray-500 mt-2">75% of monthly budget used</p>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-gray-500">Savings Rate</h3>
+                <span class="text-green-500">+8.2%</span>
+            </div>
+            <p class="text-2xl font-semibold text-gray-800">24.5%</p>
+            <div class="mt-4 h-2 bg-gray-200 rounded-full">
+                <div class="h-2 bg-green-600 rounded-full" style="width: 24.5%"></div>
+            </div>
+            <p class="text-sm text-gray-500 mt-2">Of total income saved</p>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-gray-500">Bill Payment Score</h3>
+                <span class="text-blue-500">98%</span>
+            </div>
+            <p class="text-2xl font-semibold text-gray-800">Excellent</p>
+            <div class="mt-4 h-2 bg-gray-200 rounded-full">
+                <div class="h-2 bg-blue-600 rounded-full" style="width: 98%"></div>
+            </div>
+            <p class="text-sm text-gray-500 mt-2">Based on payment history</p>
+        </div>
+    </div>
+
+    <!-- Spending Analysis -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4">Category Breakdown</h3>
+            <div class="space-y-4">
+                <div>
+                    <div class="flex justify-between text-sm mb-1">
+                        <span class="text-gray-600">Restaurants</span>
+                        <span class="text-gray-900">$450 (28%)</span>
+                    </div>
+                    <div class="h-2 bg-gray-200 rounded-full">
+                        <div class="h-2 bg-red-500 rounded-full" style="width: 28%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm mb-1">
+                        <span class="text-gray-600">Studies</span>
+                        <span class="text-gray-900">$320 (20%)</span>
+                    </div>
+                    <div class="h-2 bg-gray-200 rounded-full">
+                        <div class="h-2 bg-blue-500 rounded-full" style="width: 20%"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex justify-between text-sm mb-1">
+                        <span class="text-gray-600">Travel</span>
+                        <span class="text-gray-900">$280 (17%)</span>
+                    </div>
+                    <div class="h-2 bg-gray-200 rounded-full">
+                        <div class="h-2 bg-green-500 rounded-full" style="width: 17%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4">Spending Insights</h3>
+            <div class="space-y-4">
+                <div class="flex items-center p-3 bg-red-50 rounded-lg">
+                    <svg class="w-5 h-5 text-red-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                    </svg>
+                    <span class="text-red-800">Restaurant spending is 15% above average</span>
+                </div>
+                <div class="flex items-center p-3 bg-green-50 rounded-lg">
+                    <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span class="text-green-800">Study expenses are within budget</span>
+                </div>
+                <div class="flex items-center p-3 bg-blue-50 rounded-lg">
+                    <svg class="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                    </svg>
+                    <span class="text-blue-800">Savings trend is positive this month</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Monthly Trend -->
+    <div class="bg-white rounded-lg border border-gray-200 p-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">Monthly Spending Trend</h3>
+        <div class="h-64 flex items-end justify-between space-x-2">
+            <div class="flex-1 bg-blue-100 hover:bg-blue-200 transition-colors rounded-t" style="height: 40%"></div>
+            <div class="flex-1 bg-blue-100 hover:bg-blue-200 transition-colors rounded-t" style="height: 60%"></div>
+            <div class="flex-1 bg-blue-100 hover:bg-blue-200 transition-colors rounded-t" style="height: 45%"></div>
+            <div class="flex-1 bg-blue-100 hover:bg-blue-200 transition-colors rounded-t" style="height: 70%"></div>
+            <div class="flex-1 bg-blue-100 hover:bg-blue-200 transition-colors rounded-t" style="height: 55%"></div>
+            <div class="flex-1 bg-blue-100 hover:bg-blue-200 transition-colors rounded-t" style="height: 65%"></div>
+            <div class="flex-1 bg-blue-600 hover:bg-blue-700 transition-colors rounded-t" style="height: 80%"></div>
+        </div>
+        <div class="flex justify-between mt-4 text-sm text-gray-600">
+            <span>Jun</span>
+            <span>Jul</span>
+            <span>Aug</span>
+            <span>Sep</span>
+            <span>Oct</span>
+            <span>Nov</span>
+            <span>Dec</span>
+        </div>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="budgets" class="p-6 bg-gray-50">
+    <div class="flex justify-between items-center mb-6">
+        <div>
+            <h2 class="text-xl font-semibold text-gray-800">Budget Planning</h2>
+            <p class="text-gray-600">Manage and track your monthly budgets</p>
+        </div>
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+            </svg>
+            Create Budget
+        </button>
+    </div>
+
+    <!-- Budget Summary -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+        <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="text-sm font-medium text-gray-500">Total Budget</h3>
+            <p class="text-2xl font-semibold text-gray-900 mb-4">$3,500</p>
+            <div class="h-2 bg-gray-200 rounded-full">
+                <div class="h-2 bg-blue-600 rounded-full" style="width: 65%"></div>
+            </div>
+            <div class="mt-2 flex justify-between text-sm">
+                <span class="text-gray-500">Spent: $2,275</span>
+                <span class="text-gray-500">65%</span>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="text-sm font-medium text-gray-500">Remaining</h3>
+            <p class="text-2xl font-semibold text-green-600 mb-4">$1,225</p>
+            <div class="h-2 bg-gray-200 rounded-full">
+                <div class="h-2 bg-green-600 rounded-full" style="width: 35%"></div>
+            </div>
+            <div class="mt-2 flex justify-between text-sm">
+                <span class="text-gray-500">Available</span>
+                <span class="text-gray-500">35%</span>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="text-sm font-medium text-gray-500">Daily Budget</h3>
+            <p class="text-2xl font-semibold text-gray-900 mb-4">$39.50</p>
+            <div class="h-2 bg-gray-200 rounded-full">
+                <div class="h-2 bg-yellow-600 rounded-full" style="width: 80%"></div>
+            </div>
+            <div class="mt-2 flex justify-between text-sm">
+                <span class="text-gray-500">12 days remaining</span>
+                <span class="text-gray-500">80%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category Budgets -->
+    <div class="bg-white rounded-lg border border-gray-200">
+        <div class="p-6 border-b border-gray-200">
+            <h3 class="text-lg font-semibold text-gray-800">Category Budgets</h3>
+        </div>
+
+        <div class="divide-y divide-gray-200">
+            <!-- Restaurants Budget -->
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center">
+                        <div class="p-2 bg-red-100 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-900">Restaurants</h4>
+                            <p class="text-sm text-gray-500">$450 of $500</p>
+                        </div>
+                    </div>
+                    <button class="text-blue-600 hover:text-blue-700 text-sm font-medium">Adjust</button>
+                </div>
+                <div class="h-2 bg-gray-200 rounded-full">
+                    <div class="h-2 bg-red-600 rounded-full" style="width: 90%"></div>
+                </div>
+                <p class="mt-2 text-sm text-red-600">Warning: Near budget limit</p>
+            </div>
+
+            <!-- Studies Budget -->
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center">
+                        <div class="p-2 bg-blue-100 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-900">Studies</h4>
+                            <p class="text-sm text-gray-500">$320 of $600</p>
+                        </div>
+                    </div>
+                    <button class="text-blue-600 hover:text-blue-700 text-sm font-medium">Adjust</button>
+                </div>
+                <div class="h-2 bg-gray-200 rounded-full">
+                    <div class="h-2 bg-blue-600 rounded-full" style="width: 53%"></div>
+                </div>
+                <p class="mt-2 text-sm text-green-600">On track with budget</p>
+            </div>
+
+            <!-- Travel Budget -->
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <div class="flex items-center">
+                        <div class="p-2 bg-green-100 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-900">Travel</h4>
+                            <p class="text-sm text-gray-500">$180 of $200</p>
+                        </div>
+                    </div>
+                    <button class="text-blue-600 hover:text-blue-700 text-sm font-medium">Adjust</button>
+                </div>
+                <div class="h-2 bg-gray-200 rounded-full">
+                    <div class="h-2 bg-green-600 rounded-full" style="width: 90%"></div>
+                </div>
+                <p class="mt-2 text-sm text-yellow-600">Approaching budget limit</p>
+            </div>
+        </div>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="reports" class="p-6 bg-gray-50">
+    <div class="mb-6">
+        <h2 class="text-xl font-semibold text-gray-800">Financial Reports</h2>
+        <p class="text-gray-600">Detailed insights into your financial activities</p>
+    </div>
+
+    <!-- Report Filters -->
+    <div class="bg-white rounded-lg border border-gray-200 p-4 mb-6">
+        <div class="flex flex-wrap gap-4">
+            <div class="flex-1">
+                <label class="block text-sm font-medium text-gray-700 mb-1">Date Range</label>
+                <select class="w-full border-gray-200 rounded-lg text-gray-700 text-sm">
+                    <option>Last 30 days</option>
+                    <option>Last 3 months</option>
+                    <option>Last 6 months</option>
+                    <option>Last year</option>
+                    <option>Custom range</option>
+                </select>
+            </div>
+            <div class="flex-1">
+                <label class="block text-sm font-medium text-gray-700 mb-1">Category</label>
+                <select class="w-full border-gray-200 rounded-lg text-gray-700 text-sm">
+                    <option>All Categories</option>
+                    <option>Restaurants</option>
+                    <option>Studies</option>
+                    <option>Food</option>
+                    <option>Travel</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="flex-1">
+                <label class="block text-sm font-medium text-gray-700 mb-1">Report Type</label>
+                <select class="w-full border-gray-200 rounded-lg text-gray-700 text-sm">
+                    <option>Expense Summary</option>
+                    <option>Category Analysis</option>
+                    <option>Budget Performance</option>
+                    <option>Savings Report</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Report Summary Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-6">
+        <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="text-sm font-medium text-gray-500">Total Expenses</h3>
+            <p class="text-2xl font-semibold text-gray-900">$4,256.78</p>
+            <span class="text-sm text-red-500">+12.5% vs last period</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="text-sm font-medium text-gray-500">Average Daily Spend</h3>
+            <p class="text-2xl font-semibold text-gray-900">$142.89</p>
+            <span class="text-sm text-green-500">-3.2% vs last period</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="text-sm font-medium text-gray-500">Top Category</h3>
+            <p class="text-2xl font-semibold text-gray-900">Restaurants</p>
+            <span class="text-sm text-gray-500">28% of total spend</span>
+        </div>
+        <div class="bg-white p-6 rounded-lg border border-gray-200">
+            <h3 class="text-sm font-medium text-gray-500">Budget Status</h3>
+            <p class="text-2xl font-semibold text-green-600">On Track</p>
+            <span class="text-sm text-gray-500">85% of budget used</span>
+        </div>
+    </div>
+
+    <!-- Detailed Report -->
+    <div class="bg-white rounded-lg border border-gray-200">
+        <div class="p-6 border-b border-gray-200">
+            <h3 class="text-lg font-semibold text-gray-800">Expense Details</h3>
+        </div>
+        <div class="p-6">
+            <div class="overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead>
+                        <tr class="text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            <th class="p-3">Date</th>
+                            <th class="p-3">Category</th>
+                            <th class="p-3">Description</th>
+                            <th class="p-3">Amount</th>
+                            <th class="p-3">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="text-sm">
+                            <td class="p-3 text-gray-900">Dec 15, 2023</td>
+                            <td class="p-3">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Restaurants</span>
+                            </td>
+                            <td class="p-3 text-gray-900">Downtown Cafe</td>
+                            <td class="p-3 text-gray-900">$42.50</td>
+                            <td class="p-3">
+                                <span class="text-green-600">Completed</span>
+                            </td>
+                        </tr>
+                        <tr class="text-sm">
+                            <td class="p-3 text-gray-900">Dec 14, 2023</td>
+                            <td class="p-3">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">Studies</span>
+                            </td>
+                            <td class="p-3 text-gray-900">Course Materials</td>
+                            <td class="p-3 text-gray-900">$125.00</td>
+                            <td class="p-3">
+                                <span class="text-green-600">Completed</span>
+                            </td>
+                        </tr>
+                        <tr class="text-sm">
+                            <td class="p-3 text-gray-900">Dec 13, 2023</td>
+                            <td class="p-3">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Travel</span>
+                            </td>
+                            <td class="p-3 text-gray-900">Bus Pass</td>
+                            <td class="p-3 text-gray-900">$65.00</td>
+                            <td class="p-3">
+                                <span class="text-green-600">Completed</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Export Options -->
+    <div class="mt-6 flex justify-end gap-4">
+        <button class="px-4 py-2 border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            Export PDF
+        </button>
+        <button class="px-4 py-2 border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            Export Excel
+        </button>
+    </div>
+</div>
+</htmlCode><htmlCode>
+<div id="settings" class="p-6 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-xl font-semibold text-gray-800 mb-6">Settings</h2>
+
+        <!-- Settings Sections -->
+        <div class="space-y-6">
+            <!-- Profile Settings -->
+            <div class="bg-white rounded-lg border border-gray-200">
+                <div class="p-6 border-b border-gray-200">
+                    <h3 class="text-lg font-medium text-gray-900">Profile Settings</h3>
+                </div>
+                <div class="p-6 space-y-4">
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 mr-4"></div>
+                        <div>
+                            <button class="text-sm text-blue-600 hover:text-blue-700 font-medium">Change Profile Picture</button>
+                            <p class="text-xs text-gray-500 mt-1">JPG, GIF or PNG. Max size 2MB</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" class="w-full p-2 border border-gray-200 rounded-lg" value="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" class="w-full p-2 border border-gray-200 rounded-lg" value="john@example.com">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notification Preferences -->
+            <div class="bg-white rounded-lg border border-gray-200">
+                <div class="p-6 border-b border-gray-200">
+                    <h3 class="text-lg font-medium text-gray-900">Notification Preferences</h3>
+                </div>
+                <div class="p-6 space-y-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-900">Budget Alerts</h4>
+                            <p class="text-sm text-gray-500">Get notified when you're close to budget limits</p>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="sr-only peer" checked>
+                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-900">Bill Reminders</h4>
+                            <p class="text-sm text-gray-500">Receive reminders for upcoming bill payments</p>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="sr-only peer" checked>
+                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                        </label>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-900">Weekly Reports</h4>
+                            <p class="text-sm text-gray-500">Get weekly summary of your expenses</p>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="sr-only peer">
+                            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Settings -->
+            <div class="bg-white rounded-lg border border-gray-200">
+                <div class="p-6 border-b border-gray-200">
+                    <h3 class="text-lg font-medium text-gray-900">Security</h3>
+                </div>
+                <div class="p-6 space-y-4">
+                    <button class="w-full flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50">
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-900">Change Password</h4>
+                            <p class="text-sm text-gray-500">Update your password regularly</p>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                    <button class="w-full flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50">
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-900">Two-Factor Authentication</h4>
+                            <p class="text-sm text-gray-500">Add an extra layer of security</p>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Data & Privacy -->
+            <div class="bg-white rounded-lg border border-gray-200">
+                <div class="p-6 border-b border-gray-200">
+                    <h3 class="text-lg font-medium text-gray-900">Data & Privacy</h3>
+                </div>
+                <div class="p-6 space-y-4">
+                    <button class="w-full flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50">
+                        <div>
+                            <h4 class="text-sm font-medium text-gray-900">Export Data</h4>
+                            <p class="text-sm text-gray-500">Download all your financial data</p>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                    </button>
+                    <button class="w-full flex items-center justify-between p-4 border border-red-200 rounded-lg hover:bg-red-50">
+                        <div>
+                            <h4 class="text-sm font-medium text-red-600">Delete Account</h4>
+                            <p class="text-sm text-red-500">Permanently delete your account</p>
+                        </div>
+                        <svg class="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Save Changes Button -->
+        <div class="mt-6 flex justify-end">
+            <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                Save Changes
+            </button>
+        </div>
+    </div>
+</div>
+</htmlCode>
